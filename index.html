@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="right-col">
+        <p>Click Here To Listen</p>
+        <img src="Assets/play-button-png-22.png" id="icon">
+    </div>
+
+    <audio id="mySong">
+        <source src="Assets/d4vd-Here-With-Me-24Naijamuzic-com.mp3" type="audio/mp3">
+    </audio>
+
+    
+    <div class="box">
+        <span style="--i:1;"><img src="Assets/FB_01.jpg" alt=""></span>
+        <span style="--i:2;"><img src="Assets/FB_06.jpg" alt=""></span>
+        <span style="--i:3;"><img src="Assets/FB_03.jpg" alt=""></span>
+        <span style="--i:4;"><img src="Assets/FB_02.jpg" alt=""></span>
+        <span style="--i:5;"><img src="Assets/FB_04.jpg" alt=""></span>
+        <span style="--i:6;"><img src="Assets/FB_05.jpg" alt=""></span>
+        <span style="--i:7;"><img src="Assets/FB_07.jpg" alt=""></span>
+        <span style="--i:8;"><img src="Assets/FB_08.jpg" alt=""></span>
+    </div>
+    
+
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            if(mySong.paused){
+                mySong.play();
+                icon.src = "Assets/pause-button-png-7.png";
+            }else{
+                mySong.pause();
+                icon.src = "Assets/play-button-png-22.png";
+            }
+        }
+    </script>
+
+</body>
+</html>
