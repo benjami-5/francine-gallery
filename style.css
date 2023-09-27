@@ -72,7 +72,7 @@ body{
 
 .right-col p{
     font-size: 18px;
-    color: #5f5f55;
+    color: #fff;
     font-weight: 400;
     margin-right: 15px;
 }
@@ -86,5 +86,10 @@ body{
     .box{
         width: 100px;
         height: 160px; 
+    }
+
+    body{
+        height: 100vh;
+        width: 100%;
     }
 }
